@@ -1,0 +1,34 @@
+{
+  "tests": [
+    {
+      "name": "EX0",
+      "setup": "",
+      "run": "make test",
+      "input": "1 1",
+      "output": "2",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "EX1",
+      "setup": "",
+      "run": "make test",
+      "input": "1.5 1.5",
+      "output": "3",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    },
+    {
+      "name": "EX2",
+      "setup": "",
+      "run": "make test",
+      "input": "ew 2",
+      "output": "2",
+      "comparison": "included",
+      "timeout": 10,
+      "points": null
+    }
+  ]
+}
