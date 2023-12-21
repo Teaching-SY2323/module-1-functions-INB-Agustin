@@ -14,9 +14,9 @@ int main()
     cout << "Enter y Value: ";
     cin >> y;
 
-    cout << "__________________";
+    cout << "The value of the two numbers is: ";
 
-    cout << Add2Values(x, y)
+    cout << Add2Values(x, y);
 
     return 0;
 }
@@ -24,4 +24,6 @@ int main()
 int Add2Values(int x, int y)
 {
     // make your code here
+    int total = x + y;
+    return total;
 }
