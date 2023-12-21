@@ -3,7 +3,7 @@
     {
       "name": "EX0",
       "setup": "",
-      "run": "make test1",
+      "run": "make test0",
       "input": "1 1",
       "output": "2",
       "comparison": "included",
@@ -13,7 +13,7 @@
     {
       "name": "EX1",
       "setup": "",
-      "run": "make test2",
+      "run": "make test1",
       "input": "1.5 1.5",
       "output": "3",
       "comparison": "included",
@@ -23,7 +23,7 @@
     {
       "name": "EX2",
       "setup": "",
-      "run": "make test1",
+      "run": "make test2",
       "input": "ew 1",
       "output": "1",
       "comparison": "included",
