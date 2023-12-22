@@ -1,35 +1,40 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int Add2Values(float, float);
 
-int main()
-{
-    float x, y;
-    cout
-        << "-- Add 2 Values --\n"
-        << "Enter x Values: ";
-    cin >> x;
-    if (x >= 'A' && x<= 'z'){
-    	cout << "Enter y Value: ";
-    	cin >> y;
-    	cout << "The value of the two numbers is: " << y ;
-	}else if (!(x >= 'A' && x<= 'z')) {
-		cout << "Enter y Value: ";
-		cin >> y;
-		cout << Add2Values(x, y);
-	}else {
-		cout << "Invalid! Please Enter a Valid Input";
-	}
-	
+int main() {
+    float x = 0, y = 0;
+    string input;
+
+    cout << "-- Add 2 Values --\n"
+         << "Enter x Value: ";
+    cin >> input;
+
+    try {
+        x = stof(input); 
+    } catch (const std::invalid_argument& e) {
+        cout << "Invalid input for x. Setting x to 0." << endl;
+    }
+
+    cout << "Enter y Value: ";
+    cin >> input;
+
+    try {
+        y = stof(input); 
+    } catch (const std::invalid_argument& e) {
+        cout << "Invalid input for y. Setting y to 0." << endl;
+    }
+
+
+    int sum = static_cast<int>(Add2Values(x, y));
+    cout << "The sum of the two numbers is: " << sum << endl;
+
     return 0;
-    
 }
 
-int Add2Values(float x, float y)
-{
-    // make your code here
-    int total = x + y;
-    return total;
+int Add2Values(float x, float y) {
+    return x + y;
 }
