@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 
+
 using namespace std;
 
 int Add2Values(float, float);
@@ -16,7 +17,7 @@ int main() {
     try {
         x = stof(input); 
     } catch (const std::invalid_argument& e) {
-        cout << "Invalid input for x. Setting x to 0." << endl;
+        
     }
 
     cout << "Enter y Value: ";
@@ -25,7 +26,6 @@ int main() {
     try {
         y = stof(input); 
     } catch (const std::invalid_argument& e) {
-        cout << "Invalid input for y. Setting y to 0." << endl;
     }
 
 
